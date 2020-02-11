@@ -3,7 +3,7 @@ const person = (props) => {
   return (
       <div>
         <p>Hello, I'm {props.name}, No.{props.number}</p>
-        <input type="text" defaultValue={props.name} />
+        <input type="text" defaultValue={props.name} onChange={props.onChanged}/>
         <button onClick={props.myClick}>删除{props.id}</button>
       </div>
   )
